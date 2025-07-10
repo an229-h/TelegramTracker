@@ -1,11 +1,25 @@
 # TeleTracker
 
-TeleTracker is a simple Python script that tracks the online/offline status of a specified Telegram user and logs status changes with timestamps.
+TeleTracker tracks the online/offline status of a specified Telegram user and logs status changes with timestamps.
+
+There are two ways to use it:
+- **main.py**: Edit this file in a text editor to enter your credentials directly in the code (recommended for convenience and automation). See the section below for details.
+- **noedit.py**: Run this script if you don't want to edit code; it will prompt you for credentials each time.
+
+> **Tip:** Both scripts can be used interchangeably.
+
+### Editing Credentials in Code (main.py)
+1. Open `main.py` in any text editor (Notepad, VS Code, etc.).
+2. Find the lines for `api_id`, `api_hash`, `phone_number`, and `tracked_user` and enter your details.
+3. Save the file. Now you can run `main.py` without entering credentials each time.
+
+If you prefer not to store credentials in the code, use `noedit.py` instead.
+
 
 ## Features
-- Tracks a Telegram user's online/offline status in real-time
-- Logs status changes with timestamps and duration
-- Outputs logs to both the console and a text file (`user_status_report.txt`)
+- Track a Telegram user's online/offline status in real-time
+- Log status changes with timestamps and duration
+- Output logs to both the console and a text file (`user_status_report.txt`)
 - Customizable refresh interval and timezone
 
 ## Requirements
@@ -21,7 +35,7 @@ TeleTracker is a simple Python script that tracks the online/offline status of a
 2. Navigate to the folder where you want to clone the repository.
 3. Run:
    ```powershell
-   git clone https://github.com/your-username/TeleTracker.git
+   git clone https://github.com/an229-h/TeleTracker.git
    cd TeleTracker
    ```
 
@@ -65,13 +79,18 @@ You can also run TeleTracker on Android using Termux:
    - `phone_number` (in international format, e.g., `+91...`)
    - `tracked_user` (username or user ID to track)
 
+
 ## Usage
-Run the script using Python:
+
+To run with credentials saved in the code:
 ```sh
 python main.py
 ```
-
-The script will log the tracked user's status changes to the console and to `user_status_report.txt`.
+To be prompted for credentials each time:
+```sh
+python noedit.py
+```
+Both scripts log the tracked user's status changes to the console and to `user_status_report.txt`.
 
 ## Notes
 - The refresh interval is set to 1 second by default. You can change this in `main.py` (see the `asyncio.sleep(1)` line).
