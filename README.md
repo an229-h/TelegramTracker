@@ -13,11 +13,48 @@ TeleTracker is a simple Python script that tracks the online/offline status of a
 - Telegram API credentials (API ID, API Hash, and phone number)
 - Required packages: `telethon`, `tzdata`
 
+
 ## Installation
-1. Clone or download this repository.
-2. Install the required packages:
+
+### Cloning the Repository on Windows
+1. Open Command Prompt or PowerShell.
+2. Navigate to the folder where you want to clone the repository.
+3. Run:
+   ```powershell
+   git clone https://github.com/your-username/TeleTracker.git
+   cd TeleTracker
+   ```
+
+### Installing Requirements
+Run:
    ```sh
    pip install -r requirements.txt
+   ```
+## Termux Users
+
+You can also run TeleTracker on Android using Termux:
+
+1. Install [Termux](https://f-droid.org/packages/com.termux/) from F-Droid.
+2. Open Termux and update packages:
+   ```sh
+   pkg update && pkg upgrade
+   ```
+3. Install Python and Git:
+   ```sh
+   pkg install python git
+   ```
+4. Clone the repository:
+   ```sh
+   git clone https://github.com/an229-h/TeleTracker.git
+   cd TeleTracker
+   ```
+5. Install requirements:
+   ```sh
+   pip install -r requirements.txt
+   ```
+6. Run the script:
+   ```sh
+   python main.py
    ```
 
 ## Setup
@@ -45,4 +82,3 @@ The script will log the tracked user's status changes to the console and to `use
 
 This project is licensed under the MIT License.
 
-```
