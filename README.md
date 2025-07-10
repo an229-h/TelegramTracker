@@ -44,6 +44,12 @@ Run:
    ```sh
    pip install -r requirements.txt
    ```
+OR
+manually install requirements
+```sh
+   pip install telethon
+   pip install tzdata
+   ```
 ## Termux Users
 
 You can also run TeleTracker on Android using Termux:
